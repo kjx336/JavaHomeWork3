@@ -33,8 +33,8 @@ public class Equation {
     void Count(){
         GetDT();
         if(DT>0.0){
-            System.out.println("方程的第一个根为"+((Math.sqrt(DT)-b)/2*a));
-            System.out.println("方程的第二个根为"+((-Math.sqrt(DT)-b)/2*a));
+            System.out.println("方程的第一个根为"+(Math.sqrt(DT)-b)/2*a);
+            System.out.println("方程的第二个根为"+(-Math.sqrt(DT)-b)/2*a);
         }else if(DT==0.0){
             System.out.println("方程实根为"+(Math.sqrt(DT)-b)/2*a);
         }else{
@@ -42,6 +42,6 @@ public class Equation {
         }
     }
     void Print(){
-        System.out.println("方程输出为："+a+"x^2+"+b+"x+"+c);
+        System.out.println("方程输出为："+a+"x^2"+b+"x"+c);
     }
 }

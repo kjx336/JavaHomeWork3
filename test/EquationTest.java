@@ -15,6 +15,7 @@ import static org.junit.Assert.*;
  *
  * @author kjx33
  */
+
 public class EquationTest {
     
     public EquationTest() {
@@ -23,7 +24,6 @@ public class EquationTest {
     
     @BeforeClass
     public static void setUpClass() {
-        Equation 
     }
     
     @AfterClass
@@ -32,6 +32,7 @@ public class EquationTest {
     
     @Before
     public void setUp() {
+        
     }
     
     @After
@@ -41,6 +42,11 @@ public class EquationTest {
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
-    // @Test
-    // public void hello() {}
+    @Test
+    public void test(){
+        Equation MyEquation = new Equation(1,2,1);
+        MyEquation.Judge();
+        MyEquation.Count();
+        MyEquation.Print();
+    }
 }
